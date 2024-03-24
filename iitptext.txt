@@ -1,0 +1,22 @@
+plt.save();
+
+
+def normalizedData(AllData):
+for i in range(len(AllData)):
+AllData[i]=map(float, AllData[i])
+
+mydata_list_of_list=[]
+mean_data=[]
+std_data=[]
+for i in range(len(AllData)):
+mydata_list_of_list.append([])
+for j in range(dimension):
+mydata_list_of_list[i].append(AllData[i][j])
+
+mydata_list_of_list=np.asarray(mydata_list_of_list)
+mean_data=np.mean(mydata_list_of_list, axis=0)
+std_data=np.std(mydata_list_of_list, axis=0)
+
+mydata_list_of_list=(mydata_list_of_list-mean_data)/std_data
+mydata_list_of_list=mydata_list_of_list.tolist()
+return  mydata_list_of_list

@@ -1,0 +1,25 @@
+
+You also need to study Non-dominating Sorting and Crowding distance. Please go through this.
+
+Some basic concept:
+
+Clustering is a grouping of a similar object (also called data) in the same group and the objects (or data) that are not similar will be placed in a different group.
+Generally, a data (or object) is represented with many features (also called dimensions).
+But, all the features that are used to represent a data are not relevant. Some redundant or irrelevant features are also there to represent a data.
+These irrelevant or redundant data degrades the cluster quality and has to be removed.
+Feature selection and Feature reduction are used to identify and removal of these irrelevant features. 
+
+With respect to Multiobjective optimization:
+
+Generally, we represent each cluster in a circular shape.
+where the objectives are compactness (within a cluster the objects must be closely spaced wrt cluster center) and separation (distance between each cluster should be more).
+So, we have to minimize the compactness and maximize the separation.
+All the indices (including XB-index and PBM-index ) are functions of compactness and separation. They are represented in different ways based on a different theoretical concept.
+
+I hope this information will be helpful for your further study.
+
+
+
+1. Clustering, Subspace Cluster
+2. Feature Selection, Feature reduction
+3. Multiobjective optimization based clustering
